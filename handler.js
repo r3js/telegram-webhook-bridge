@@ -7,7 +7,7 @@ async function webhookCenter(event) {
   await telegram(JSON.stringify(event, null, 2));
   return {
     statusCode: 200,
-    body: "",
+    body: "OK",
   };
 }
 
