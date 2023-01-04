@@ -17,7 +17,7 @@ async function webhookCenter(event) {
   }
   return {
     statusCode: 200,
-    body: "OK",
+    body: event.queryStringParameters["hub.challenge"],
   };
 }
 
