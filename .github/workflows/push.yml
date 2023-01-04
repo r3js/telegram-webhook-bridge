@@ -33,4 +33,4 @@ jobs:
         run: npm install
 
       - name: Deploy
-        run: npx serverless@6.2.1 deploy
+        run: npx serverless@3.26.0 deploy

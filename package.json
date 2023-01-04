@@ -12,7 +12,7 @@
     "telegraf": "^4.4.2"
   },
   "devDependencies": {
-    "serverless": "^3.26.0",
+    "serverless": "3.26.0",
     "serverless-domain-manager": "^6.2.1"
   }
 }
