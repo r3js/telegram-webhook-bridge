@@ -15,9 +15,18 @@ async function webhookCenter(event) {
 
     await telegram(JSON.stringify(body, null, 2));
   }
+
+  let response = "OK";
+  if (
+    event.queryStringParameters &&
+    event.queryStringParameters["hub.challenge"]
+  ) {
+    response = event.queryStringParameters["hub.challenge"];
+  }
+
   return {
     statusCode: 200,
-    body: event.queryStringParameters["hub.challenge"] ?? "OK",
+    body: response,
   };
 }
 
