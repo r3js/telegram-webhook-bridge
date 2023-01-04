@@ -1,5 +1,5 @@
 {
-  "name": "telegram-remember",
+  "name": "webhooks-center",
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "telegraf": "^4.4.2"
+  },
+  "devDependencies": {
+    "serverless": "^3.26.0",
+    "serverless-domain-manager": "^6.2.1"
   }
 }

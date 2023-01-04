@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const telegram = require("./telegram")
+const telegram = require("./telegram");
 
-async function sendReminder(event) {
-  await telegram()
+async function webhookCenter(event) {
+  console.log("🔥", JSON.stringify(event, null, 2));
+  await telegram(JSON.stringify(event, null, 2));
   return {
     statusCode: 200,
-    body: ""
+    body: "",
   };
-};
+}
 
-
-module.exports = { sendReminder }
+module.exports = { webhookCenter };
